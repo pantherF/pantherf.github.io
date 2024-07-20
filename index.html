@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your MOM</title>
+</head>
+<body>
+    <h1>Your mom <span id="adjective">?</span> you!</h1>
+    <button onclick="getData()">
+        FIND OUT!
+    </button>
+</body>
+</html>
+<script>
+    async function getData() {
+        const url = "https://random-word-api.herokuapp.com/word";
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+            }
+
+            const json = await response.json();
+            document.getElementById("adjective").innerHTML = json[0];
+        } catch (error) {
+            document.getElementById("adjective").innerHTML = "Whoops, an error occured!" + "\nerror.message";
+        }
+    }
+</script>
+<style>
+    * {
+        background-color: #1b1b1b;
+        font-family: 'Courier New', Courier, monospace;
+        color:beige;
+        font-size: xx-large;
+    }
+/* 
+    h1 {
+        font-size: ;
+    } */
+
+    body {
+        margin: 0 auto;
+        width: 50%;
+        padding: 1em;
+        text-align: center;
+    }
+</style>
