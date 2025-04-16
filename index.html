@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
 <html>
 
 <head>
@@ -7,13 +9,104 @@
 
 <body>
 
-    <h1>
+    <header>
+        <h1>
+            p
+        </h1>
+    </header>
+
+    <nav>
+        <div>
+            <ul class="navbar">
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <form>
+                <input type="search" name="q" placeholder="Search query" />
+                <input type="submit" value="Go!" />
+            </form>
+        </div>
+    </nav>
+
+    <h2>
         Hello, and welcome to my site!
-    </h1>
+    </h2>
     <p>
         Prepare for some amazing IT-Stuff &#128526;
     </p>
 
+    <p>
+        While you are here, checkout my <a href="https://github.com/pantherF">github</a>! (just don't visit the repo for
+        this site, please).
+
+    </p>
+
+
+    <footer>
+        &copy; panther.fun - 2025
+    </footer>
+
 </body>
 
 </html>
+
+
+<style>
+    * {
+        background-color: rgb(34, 34, 34);
+        color: antiquewhite;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav {
+        padding: 0.5em;
+        background-color: rgb(17, 17, 17);
+        border-radius: 0.3em;
+    }
+
+    ul {
+        list-style-type: none;
+        background-color: transparent;
+    }
+
+    li,
+    a,
+    div,
+    form {
+        background-color: transparent;
+    }
+
+    h1 {
+        font-weight: lighter;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0.5em;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        text-align: center;
+    }
+</style>
