@@ -1,112 +1,63 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<html>
+<html lang="en">
 
 <head>
-    <title>panther.fun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/glitch.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="terminal-bg min-h-screen font-mono text-gray-100 flex flex-col">
+    <div id="header"></div>
+    <div id="navbar"></div>
 
-    <header>
-        <h1>
-            p
-        </h1>
-    </header>
+    <main class="container mx-auto px-4 py-8 pb-15 flex-grow">
+        <section class="space-y-6">
+            <!-- Introduction -->
+            <div
+                class="bg-black bg-opacity-50 p-6 rounded-lg border border-green-400/30 backdrop-filter backdrop-blur-sm">
+                <h2 class="text-3xl mb-4 text-green-400 glitch-hover">Hello, and welcome to my website!</h2>
+                <p class="text-lg mb-4">There is amazing IT content coming soon! &#128526;</p>
+                <p class="text-lg">
+                    In the meantime, please checkout my
+                    <a href="https://github.com/pantherF"
+                        class="text-green-400 hover:text-green-300 underline decoration-dotted glitch-hover"
+                        target="_blank" rel="noopener noreferrer">github</a>!
+                </p>
+            </div>
 
-    <nav>
-        <div>
-            <ul class="navbar">
-                <li>
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+            <!-- Skills Section -->
+            <div
+                class="bg-black bg-opacity-50 p-6 rounded-lg border border-green-400/30 backdrop-filter backdrop-blur-sm">
+                <h3 class="text-2xl mb-4 text-green-400">Skills & Interests</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="p-4 border border-green-400/30 rounded-lg hover:border-green-400 transition-colors duration-300">
+                        <h4 class="text-xl mb-2 text-green-400">Development</h4>
+                        <p class="text-gray-300">App Development • Full Stack • Clean Code</p>
+                    </div>
+                    <div
+                        class="p-4 border border-green-400/30 rounded-lg hover:border-green-400 transition-colors duration-300">
+                        <h4 class="text-xl mb-2 text-green-400">Security</h4>
+                        <p class="text-gray-300">IT Security • Penetration Testing • Privacy</p>
+                    </div>
+                    <div
+                        class="p-4 border border-green-400/30 rounded-lg hover:border-green-400 transition-colors duration-300">
+                        <h4 class="text-xl mb-2 text-green-400">DevOps</h4>
+                        <p class="text-gray-300">CI/CD • Infrastructure • Cloud</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <form>
-                <input type="search" name="q" placeholder="Search query" />
-                <input type="submit" value="Go!" />
-            </form>
-        </div>
-    </nav>
+    <div id="footer"></div>
 
-    <h2>
-        Hello, and welcome to my site!
-    </h2>
-    <p>
-        Prepare for some amazing IT-Stuff &#128526;
-    </p>
-
-    <p>
-        While you are here, checkout my <a href="https://github.com/pantherF">github</a>! (just don't visit the repo for
-        this site, please).
-
-    </p>
-
-
-    <footer>
-        &copy; panther.fun - 2025
-    </footer>
-
+    <script src="assets/js/components.js"></script>
 </body>
 
 </html>
-
-
-<style>
-    * {
-        background-color: rgb(34, 34, 34);
-        color: antiquewhite;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    nav {
-        padding: 0.5em;
-        background-color: rgb(17, 17, 17);
-        border-radius: 0.3em;
-    }
-
-    ul {
-        list-style-type: none;
-        background-color: transparent;
-    }
-
-    li,
-    a,
-    div,
-    form {
-        background-color: transparent;
-    }
-
-    h1 {
-        font-weight: lighter;
-    }
-
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 0.5em;
-        background-color: rgb(17, 17, 17);
-        color: white;
-        text-align: center;
-    }
-</style>
