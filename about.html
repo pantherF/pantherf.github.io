@@ -17,10 +17,10 @@
 
     <main class="container mx-auto px-4 py-8 pb-15 flex-grow">
         <section class="space-y-6">
-            <div class="grid sm:grid-flow-col sm:grid-rows-2 gap-4">
+            <div>
                 <!-- Introduction -->
                 <div
-                    class="row-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    class="mb-4 row-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
                     <h2 class="text-3xl mb-4 text-purple-400 glitch-hover">Hi! My name is Hajnalka Éva Nagy</h2>
                     <p>
                         but... just call me <span
@@ -52,35 +52,128 @@
 
                 <!-- Interests Section -->
                 <div
-                    class="col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    class="mb-4 col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
                     <h3 class="text-2xl mb-4 text-purple-400">Main interests</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div
                             class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-800 transition-colors duration-300">
                             <h4 class="text-xl mb-2 text-purple-400">Linux</h4>
                             <ul class="text-gray-300 list-disc mx-4">
-                                <li>Distributions: Ubuntu, Debian</li>
-                                <li>Server Technologies: Apache, Nginx, SSH</li>
-                                <li>Scripting: Bash Scripting</li>
-                                <li>Containerization: Docker</li>
+                                <li>Distributions
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Fedora
+                                        </li>
+                                        <li>
+                                            Manjaro
+                                        </li>
+                                        <li>
+                                            Debian
+                                        </li>
+                                        <li>
+                                            Kali Linux
+                                        </li>
+                                        <li>
+                                            Ubuntu
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Server Technologies
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Apache
+                                        </li>
+                                        <li>
+                                            Nginx
+                                        </li>
+                                        <li>
+                                            SSH
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Bash Scripting
+                                </li>
+                                <li>Virtualization
+                                    <ul class="list-disc list-inside">
+                                        <li>KVM</li>
+                                        <li>Proxmox</li>
+                                        <li>VirtualBox</li>
+                                    </ul>
+                                </li>
+                                <li>Containerization</li>
+                                <li>Open Source</li>
                             </ul>
                         </div>
                         <div
                             class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-600 transition-colors duration-300">
                             <h4 class="text-xl mb-2 text-purple-400">Security</h4>
                             <ul class="text-gray-300 list-disc mx-4">
-                                <li>IT Security: Network Security, Application Security</li>
-                                <li>Pentesting: Nmap, Metasploit, OWASP principles</li>
-                                <li>Privacy: Data Protection, Encryption Methods</li>
+                                <li>IT Security
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Network Security
+                                        </li>
+                                        <li>
+                                            Application Security
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Pentesting
+                                    <ul class="list-disc list-inside">
+                                        <li>Kali Linux</li>
+                                        <li>Metasploit</li>
+                                        <li>Ghidra</li>
+                                        <li>OWASP principles</li>
+                                        <li>Virtual Machines</li>
+                                    </ul>
+                                </li>
+                                <li>Privacy
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Privacy-focused apps
+                                        </li>
+                                        <li>
+                                            Data Protection
+                                        </li>
+                                        <li>
+                                            Encryption Methods
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div
                             class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-400 transition-colors duration-300">
                             <h4 class="text-xl mb-2 text-purple-400">DevOps</h4>
                             <ul class="text-gray-300 list-disc mx-4">
-                                <li>CI/CD: GitHub Actions, GitLab CI</li>
-                                <li>Infrastructure as Code: Learning Ansible</li>
-                                <li>Container Orchestration: Kubernetes</li>
+                                <li>CI/CD
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            GitHub Actions
+                                        </li>
+                                        <li>
+                                            GitLab CI
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Infrastructure
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Learning Ansible
+                                        </li>
+                                        <li>
+                                            Virtualization
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Container Orchestration
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Kubernetes
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -88,7 +181,7 @@
 
                 <!-- Skills Section -->
                 <div
-                    class="col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    class="mb-4 col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
                     <h3 class="text-2xl mb-4 text-purple-400">Skills</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div
@@ -103,7 +196,7 @@
                                             AI
                                         </li>
                                         <li>
-                                            ML
+                                            Machine Learning
                                         </li>
                                         <li>
                                             Scripting
@@ -111,31 +204,106 @@
                                     </ul>
                                 </li>
                                 <li>Node.js</li>
-                                <li>REST API (Creation & Usage)</li>
-                                <li>MariaDB | PostgreSQL</li>
+                                <li>REST API
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Creation & Usage
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Databases
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            SQL Server
+                                        </li>
+                                        <li>
+                                            MariaDB
+                                        </li>
+                                        <li>
+                                            PostgreSQL
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div
                             class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-600 transition-colors duration-300">
                             <h4 class="text-xl mb-2 text-purple-400">Frontend Development</h4>
                             <ul class="text-gray-300 list-disc mx-4">
-                                <li>CSS | HTML</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Vue.js</li>
-                                <li>Angular.js</li>
-                                <li>Electron | Tauri</li>
+                                <li>Visuals
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            CSS
+                                        </li>
+                                        <li>
+                                            HTML
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Logic
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            JavaScript
+                                        </li>
+                                        <li>
+                                            TypeScript
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Frameworks
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Vue.js
+                                        </li>
+                                        <li>
+                                            Angular.js
+                                        </li>
+                                        <li>
+                                            Electron
+                                        </li>
+                                        <li>
+                                            Tauri
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
                         <div
                             class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-400 transition-colors duration-300">
-                            <h4 class="text-xl mb-2 text-purple-400">DevOps & Infrastructure</h4>
+                            <h4 class="text-xl mb-2 text-purple-400">Infrastructure & DevOps</h4>
                             <ul class="text-gray-300 list-disc mx-4">
-                                <li>Podman</li>
-                                <li>Docker</li>
-                                <li>Kubernetes</li>
                                 <li>Linux Server Administration</li>
-                                <li>Git + CI/CD (GitHub Actions, GitLab CI)</li>
+                                <li>Virtualization Technologies
+                                    <ul class="list-disc list-inside">
+                                        <li>VirtualBox</li>
+                                        <li>VMware</li>
+                                        <li>Proxmox</li>
+                                    </ul>
+                                </li>
+                                <li>Containerization
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Podman
+                                        </li>
+                                        <li>
+                                            Docker
+                                        </li>
+                                        <li>
+                                            Kubernetes
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Git + CI/CD
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            GitHub Actions
+                                        </li>
+                                        <li>
+                                            GitLab CI
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
