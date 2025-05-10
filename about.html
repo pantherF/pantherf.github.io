@@ -17,43 +17,129 @@
 
     <main class="container mx-auto px-4 py-8 pb-15 flex-grow">
         <section class="space-y-6">
-            <div
-                class="bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 backdrop-filter backdrop-blur-sm">
-                <h2 class="text-3xl mb-4 text-purple-400 glitch-hover">Hi! My name is Hajnalka Eva Nagy</h2>
-                <p>
-                    but... just call me <span
-                        class="text-purple-400 hover:text-purple-300 decoration-dotted glitch-hover">Hajka</span>!
-                </p>
-                <p>
-                    I am a software deweloper apprentice, finishing my studies in July of 2025. Fun fact, I recieve my
-                    diplome on the 4th of July! <a
-                        href="https://www.britannica.com/topic/Independence-Day-United-States-holiday"
-                        class="text-purple-300 hover:text-red-300 underline decoration-dotted glitch-hover">American independence
-                        day</a>. How cool is that.
-                    This diplome is the result of a 4-year apprenticeship in Application Development in Lucerne,
-                    Switzerland.
-                </p>
-                <br />
-                <p>
-                    Speaking of Switzerland, I was born here, however, lived and raised in Hungary.
-                </p>
-                <br />
-                <p>
-                    During my four years as a student in IT, I developed a fondness towards Linux systems, a passion for
-                    Information Security and the ever-growing topic of concern: personal privacy in the IT world.
-                </p>
+            <div class="grid sm:grid-flow-col sm:grid-rows-2 gap-4">
+                <!-- Introduction -->
+                <div
+                    class="row-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    <h2 class="text-3xl mb-4 text-purple-400 glitch-hover">Hi! My name is Hajnalka Éva Nagy</h2>
+                    <p>
+                        but... just call me <span
+                            class="text-purple-400 hover:text-purple-300 decoration-dotted glitch-hover">Hajka</span>!
+                    </p>
+                    <p>
+                        I am a software deweloper apprentice, finishing my studies in July of 2025.
+                        This diplome is the result of a 4-year apprenticeship in Application Development in Lucerne,
+                        Switzerland.
+                    </p>
+                    <br />
+                    <p>
+                        Speaking of Switzerland, I was born here, however, lived and raised in Hungary.
+                    </p>
+                    <br />
+                    <p>
+                        During my four years as a student in IT, I developed a fondness towards Linux systems, a passion
+                        for
+                        Information Security and the ever-growing topic of concern: personal privacy in the IT world.
+                    </p>
+                    <p>
+                        In fact, I am a huge advocate for privacy preserving tech, and promote its usage in my family
+                        circle
+                        and
+                        under firends. I want to reach beyond that, so I am looking towards participating in projects,
+                        events and working with like-minded individuals on this topic.
+                    </p>
+                </div>
 
-                <h3 class="text-2xl my-4 text-purple-400">Privacy</h3>
+                <!-- Interests Section -->
+                <div
+                    class="col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-2xl mb-4 text-purple-400">Main interests</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-800 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">Linux</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>Distributions: Ubuntu, Debian</li>
+                                <li>Server Technologies: Apache, Nginx, SSH</li>
+                                <li>Scripting: Bash Scripting</li>
+                                <li>Containerization: Docker</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-600 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">Security</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>IT Security: Network Security, Application Security</li>
+                                <li>Pentesting: Nmap, Metasploit, OWASP principles</li>
+                                <li>Privacy: Data Protection, Encryption Methods</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-400 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">DevOps</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>CI/CD: GitHub Actions, GitLab CI</li>
+                                <li>Infrastructure as Code: Learning Ansible</li>
+                                <li>Container Orchestration: Kubernetes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                <p>
-                    I am a huge advocate for privacy preserving tech, and promote its usage in my family circle and
-                    under
-                    firends. I want to reach beyond that, so I am looking towards participating in projects,
-                    events and working with like-minded individuals on this topic.
-                </p>
-                <h3 class="text-2xl my-4 text-purple-400">IT-Security</h3>
-                <h3 class="text-2xl my-4 text-purple-400">Linux</h3>
-
+                <!-- Skills Section -->
+                <div
+                    class="col-span-2 bg-black bg-opacity-50 p-6 rounded-lg border border-purple-400/30 hover:border-purple-800 backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-2xl mb-4 text-purple-400">Skills</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-800 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">Backend Development</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>C#</li>
+                                <li>PHP</li>
+                                <li>Python
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            AI
+                                        </li>
+                                        <li>
+                                            ML
+                                        </li>
+                                        <li>
+                                            Scripting
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Node.js</li>
+                                <li>REST API (Creation & Usage)</li>
+                                <li>MariaDB | PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-600 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">Frontend Development</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>CSS | HTML</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Vue.js</li>
+                                <li>Angular.js</li>
+                                <li>Electron | Tauri</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="p-4 border border-purple-400/30 rounded-lg hover:border-purple-400 transition-colors duration-300">
+                            <h4 class="text-xl mb-2 text-purple-400">DevOps & Infrastructure</h4>
+                            <ul class="text-gray-300 list-disc mx-4">
+                                <li>Podman</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>Linux Server Administration</li>
+                                <li>Git + CI/CD (GitHub Actions, GitLab CI)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
